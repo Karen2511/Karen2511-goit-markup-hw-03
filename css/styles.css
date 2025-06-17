@@ -18,6 +18,10 @@ ol {
   padding: 0;
 }
 
+img {
+  display: block;
+}
+
 h1,
 h2,
 h3,
@@ -39,6 +43,14 @@ h2 {
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.container-a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
 }
 
 .header-container {
@@ -109,12 +121,8 @@ h3 {
 .secta {
   background-color: #2e2f42;
   text-align: center;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 48px;
+
+  padding: 188px 0 188px;
 }
 
 .secta-text {
@@ -125,7 +133,7 @@ h3 {
   text-align: center;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  width: 496px;
+  max-width: 496px;
 }
 
 .sectd {
@@ -148,7 +156,12 @@ h3 {
   vertical-align: middle;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.04em;
-  padding: 12px 32px;
+  border: none;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 .btn:hover,
 .btn:focus {
