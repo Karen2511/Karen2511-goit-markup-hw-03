@@ -138,12 +138,7 @@ h3 {
 
 .sectd {
   background-color: #f4f4fd;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 120px 156px;
-  gap: 72px;
+  padding: 120px 0;
 }
 
 .btn {
@@ -218,6 +213,7 @@ footer {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 .sectd li {
   background-color: #ffffff;
@@ -226,11 +222,18 @@ footer {
   letter-spacing: 0.02em;
   color: #2e2f42;
   width: 264px;
+
+  margin-bottom: 8px;
 }
+.card-subtitle-b {
+  text-align: center;
+}
+
 .card-data {
   font-size: 16px;
   letter-spacing: 0.02em;
   color: #434455;
+  text-align: center;
 }
 .footer-p {
   letter-spacing: 0.02em;
@@ -244,6 +247,8 @@ footer {
 }
 
 .card {
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .card-d {
@@ -268,7 +273,7 @@ footer {
   width: calc((100%-72px) / 4);
 }
 .text-pid-foto-b {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .border-card {
@@ -282,5 +287,11 @@ footer {
 }
 
 .visually-hidden {
-  visibility: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
